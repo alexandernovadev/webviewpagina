@@ -17,7 +17,8 @@
       "infoPlist": {
         "UIStatusBarHidden": true,
         "UIViewControllerBasedStatusBarAppearance": false
-      }
+      },
+      "bundleIdentifier": "com.alexsk88dev.mobile"
     },
     "android": {
       "adaptiveIcon": {
@@ -28,7 +29,8 @@
       "androidStatusBar": {
         "hidden": true,
         "translucent": true
-      }
+      },
+      "package": "com.alexsk88dev.mobile"
     },
     "web": {
       "favicon": "./assets/favicon.png"
