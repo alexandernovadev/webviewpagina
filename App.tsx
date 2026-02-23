@@ -1,6 +1,5 @@
-import { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useRef } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import * as NavigationBar from 'expo-navigation-bar';
 import * as Speech from 'expo-speech';
 import { StyleSheet, View } from 'react-native';
 import { WebView } from 'react-native-webview';
@@ -16,14 +15,6 @@ interface TTSMessage {
 
 export default function App() {
   const webViewRef = useRef<WebView>(null);
-
-  useEffect(() => {
-    async function configureNavigationBar() {
-      await NavigationBar.setVisibilityAsync('hidden');
-      await NavigationBar.setBehaviorAsync('overlay-swipe');
-    }
-    configureNavigationBar();
-  }, []);
 
   const handleMessage = useCallback((event: { nativeEvent: { data: string } }) => {
     try {

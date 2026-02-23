@@ -36,4 +36,6 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
-# Ejected: android/ e ios/ se versionan (prebuild ya ejecutado)
+# generated native folders
+/ios
+/android
